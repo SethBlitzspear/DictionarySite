@@ -58,5 +58,5 @@ jobs:
         with:
           app-name: 'SJMDict'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_057C02F626B6410F8FD8DD3ED4017BA3 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_28560488A4D940C6952E2C4C714931F0 }}
           package: .
