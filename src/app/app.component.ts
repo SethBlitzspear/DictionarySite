@@ -11,7 +11,7 @@ import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 export class AppComponent {
   title: string = "Stu's silly dictionary app";
   dictionaries: IDictionary[] = [];
-  errorMessage: string = "";
+  errorMessage: string = "Getting Dictionaries...";
   activeOption: boolean[] = [];
   closeResult = '';
   newDictionaryName: string = "";
