@@ -1,0 +1,10 @@
+<td class="w-90">
+    <div (click)="selectItem(item.id)" class="border rounded-3 p3 m3 dict" [ngClass]="active ? 'border-5' : 'border-1'">
+       {{errorMessage}} {{item.key}}
+    </div>
+</td>
+<td class="w-10">
+    <button (click)="deleteItem(item.id)" class="border border-3 rounded-3 p3 m3">
+        <i class="fa fa-trash"></i>
+    </button>
+</td>

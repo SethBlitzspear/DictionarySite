@@ -1,0 +1,7 @@
+<div class="cotainer">
+    <table>
+        <tr *ngFor='let item of items'>
+            <app-item-list-item [itemID]='item.id' [active]='activeOption[item.id]' (deletedItem)="updateItems()" (childSelectItem)="selectItem(item.id)"></app-item-list-item>
+        </tr>
+    </table>
+</div> 

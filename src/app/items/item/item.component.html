@@ -1,0 +1,8 @@
+<div class="card" [ngClass]="item.id == '' ? 'd-none' : ''">
+    <div class="card-header">
+       Key:  {{item.key}}
+    </div>
+    <div class="card-body">
+        Message: <input [value]="item.message" />
+    </div>
+</div>

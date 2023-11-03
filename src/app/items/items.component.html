@@ -1,0 +1,49 @@
+<div class="container h-60 m-1">
+    <app-item-list [dictionaryID]='dictionaryID' (childSelectItem)="updateSelectedItem($event)"></app-item-list>
+    <div [ngClass]="dictionaryID == ''? 'hide' : 'show border rounded-3 p-3 m-3 align-content-center bg-info-subtle'" (click)="open(content)">Add DictionaryItem</div>
+</div>
+<div class="container h-40 m-1">
+    <div class="card w-100">
+        <div class="card-header">
+            Dictionary Item
+        </div>
+        <div class="card-body">
+            <app-item [itemID]="selectedItemID"></app-item> 
+        </div>
+    </div>
+</div>
+<ng-template #content let-modal>
+    <div class="modal-header">
+        <h4 class="modal-title" id="modal-basic-title">Create Dictionary Item</h4>
+        <button type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss('Cross click')"></button>
+    </div>
+    <div class="modal-body">
+        <form>
+            <div class="mb-3">
+                <label for="key">Key</label>
+                <div class="input-group">
+                    <input id="dictionaryName"
+                           class="form-control"
+                           placeholder="key"
+                           [(ngModel)]="newKey"
+                           [ngModelOptions]="{standalone: true}" />
+
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="message">Message</label>
+                <div class="input-group">
+                    <input id="dictionaryName"
+                           class="form-control"
+                           placeholder="message"
+                           [(ngModel)]="newMessage"
+                           [ngModelOptions]="{standalone: true}" />
+
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-outline-dark" (click)="modal.close([newKey])">Create</button>
+    </div>
+</ng-template>

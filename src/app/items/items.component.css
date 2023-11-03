@@ -1,0 +1,6 @@
+.hide {
+    height: 0px;
+}
+.show {
+    height: 100%;
+}

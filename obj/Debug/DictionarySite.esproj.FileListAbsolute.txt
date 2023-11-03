@@ -1,0 +1,2 @@
+C:\Users\smaher\source\repos\sjm\testMinAPI\DictionarySite\obj\Debug\DictionarySite.esproj.SuggestedBindingRedirects.cache
+C:\Users\smaher\source\repos\sjm\testMinAPI\DictionarySite\obj\Debug\DictionarySite.esproj.CoreCompileInputs.cache
